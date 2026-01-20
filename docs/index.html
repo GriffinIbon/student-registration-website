@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Student Registration Form</h1>
+
+    <form id="registerForm">
+        <label>Name:</label><br>
+        <input type="text" id="name" required><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" id="email" required><br><br>
+
+        <label>Course:</label><br>
+        <input type="text" id="course" required><br><br>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <p id="message"></p>
+    <h2>Registered Students</h2>
+
+<table border="1" cellpadding="5">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Course</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="studentTable">
+    </tbody>
+</table>
+
+    <script src="script.js"></script>
+</body>
+</html>
